@@ -1,0 +1,16 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+// import ReactShallowRenderer from 'react-test-renderer/shallow';
+import Header from '../../components/Header';
+
+test('should render Header correctly', () => {
+  //-----------react-test-renderer
+  // const renderer = new ReactShallowRenderer();
+  // renderer.render(<Header />);
+  // expect(renderer.getRenderOutput()).toMatchSnapshot();
+
+  const wrapper = shallow(<Header />);
+  // ----------Enzyme
+  // expect(wrapper.find('h1').text()).toBe('Expensify');
+  expect(wrapper).toMatchSnapshot();
+});
