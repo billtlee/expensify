@@ -9,6 +9,7 @@ test('should render Header correctly', () => {
   // renderer.render(<Header />);
   // expect(renderer.getRenderOutput()).toMatchSnapshot();
 
+  
   const wrapper = shallow(<Header />);
   // ----------Enzyme
   // expect(wrapper.find('h1').text()).toBe('Expensify');
